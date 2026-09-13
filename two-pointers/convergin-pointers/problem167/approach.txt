@@ -1,0 +1,10 @@
+apporach
+
+performing two pointer converging pointers approach as the 
+array is sorted and we need to find 2 distinct elements.
+
+
+1. we need to find two distinct elements so we use < x in the loop condition
+2. if the 2 summed element > target, end will be decreased by 1 and vice-versa to find the target as the array is sorted in non-decreasing order
+3. returning [-1,-1] when the loop gets terminated in case if we find nothing.
+

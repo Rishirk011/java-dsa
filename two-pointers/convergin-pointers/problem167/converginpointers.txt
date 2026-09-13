@@ -1,0 +1,10 @@
+Pointer Setup: One pointer starts at index 0 (start), and the second pointer starts at the end length - 1 (end). They move toward each other.
+
+When to Use:
+
+    Input is Sorted: When an array or string is sorted, and you need to find a pair, target sum, or range.
+
+    Palindrome Operations: Checking if a string is a palindrome.
+
+    Area / Container Bounds: Boundary-based optimization (e.g., maximum trapped water).
+
