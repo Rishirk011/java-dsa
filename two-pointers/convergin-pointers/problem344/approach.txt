@@ -1,0 +1,4 @@
+
+1. used < so that it compares till n-1 element out of n elements.
+2. swapping the first element of the array with the last element.
+3. incrementing the start and decrementing the end with each swap.
