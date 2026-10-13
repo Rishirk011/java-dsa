@@ -1,0 +1,5 @@
+            ---custom stack---
+
+this is the custom stack implementation using array
+
+1. Increases size 
