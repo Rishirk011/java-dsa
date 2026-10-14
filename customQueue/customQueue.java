@@ -1,80 +1,29 @@
 package rishi.queue;
+import rishi.queue.customQueue;
 
+class main{
+    public static void main(String[] args) throws Exception {
+        char []arr = {'a','b','c','a','b','d','b','a'};
+        int left = 0, right = 1;
+        int res = 0;
 
-public class customQueue{
+        for (int i = 0; i < arr.length; i++) {
 
-    public int []data;
-    public int ptr = 0;
-    private static int size = 10;
+            if (arr[right] == arr[left]){
 
-    public customQueue(){
-        this.data = new int[size];
-    }
+                res = 0;
+                left++;
 
-    public boolean insert(int ele){
-
-        if (isFull()){
-
-            int []temp = new int[data.length * 2];
-
-            for (int i = 0; i < ptr; i++) {
-                temp [i] = data[i];
             }
 
-            data = temp;
+            else{
+
+                res++;
+                right++;
+
+            }
 
         }
-
-        data[ptr++] = ele;
-
-        return true;
-
+        System.out.println(res);
     }
-
-    public int remove() throws Exception{
-
-        if(isEmpty()){
-            throw new Exception("queue is empty");
-        }
-
-        for (int i = 1; i < ptr - 1; i++) {
-
-            data[i-1] = data[i];
-
-        }
-
-        ptr--;
-
-        return data[0];
-
-
-    }
-
-    public int front() throws Exception {
-        
-        if (isEmpty()){
-            throw new Exception("queue is empty!");
-        }
-        
-        return data[0];
-    }
-    
-    public void display(){
-
-        for (int i = 0; i < ptr; i++) {
-            System.out.print(data[i] + " ");
-        }
-
-    }
-
-    public boolean isFull(){
-        return ptr == data.length - 1;
-    }
-
-    public boolean isEmpty(){
-        return ptr == -1;
-    }
-
 }
-
-
